@@ -1,0 +1,23 @@
+{
+  "name": "react-circle-select",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@storybook/react": "^3.2.15",
+    "@storybook/addon-actions": "^3.2.15",
+    "@storybook/addon-links": "^3.2.15"
+  },
+  "dependencies": {
+    "material-colors": "^1.2.5",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-icons": "^2.2.7"
+  }
+}
