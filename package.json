@@ -1,13 +1,16 @@
 {
-  "name": "react-circle-select",
+  "name": "react-circle-color-picker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Circle color picker component for reactjs",
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "author": "",
+  "author": {
+    "name": "Sajith Lakjaya",
+    "email": "slakjaya@gmail.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "@storybook/react": "^3.2.15",
