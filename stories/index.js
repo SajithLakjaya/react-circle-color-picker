@@ -13,6 +13,6 @@ storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo(
 
 storiesOf('Circle Color Picker', module)
   .add('Component', () => <ReactCircleColorPicker 
-    colors={[material.red[500], material.blue[500], material.green[500]]}
+    colors={[{hex: material.red[500], selected: true}, {hex: material.blue[500], selected: false}, {hex: material.green[500], selected: false}]}
     onChange={action('onChange')}
     />);

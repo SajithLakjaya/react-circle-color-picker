@@ -10,10 +10,12 @@ const Circle = ({ circleSize, onChange, circleSpacing, color, selected }) => {
     width: circleSize,
     height: circleSize,
     backgroundColor: color,
+    cursor: 'pointer',
     borderRadius: '50%',
     margin: `${circleSpacing}px`,
     boxShadow: `${color} 0px 0px 0px 14px inset`,
-    transition: 'box-shadow 100ms ease'
+    transform: 'scale(1.0)',
+    transition: 'transform 100ms ease'
   };
 
   const checkIconStyle = {

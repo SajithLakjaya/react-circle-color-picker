@@ -7,12 +7,7 @@ class ReactCircleColorPicker extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentColors: props.colors.map(color => {
-                return {
-                    hex: color,
-                    selected: false
-                }
-            })
+            currentColors: props.colors
         };
         this.onChangeColor = this.onChangeColor.bind(this);
     }
@@ -29,10 +24,7 @@ class ReactCircleColorPicker extends React.Component {
         }
 
         if (this.props.onChange) {
-            let selectedHex = this.state.currentColors.filter((color) => {
-                return color.selected
-            });
-            this.props.onChange(selectedHex);
+            this.props.onChange(this.state.currentColors);
         }
     }
 
@@ -57,7 +49,10 @@ class ReactCircleColorPicker extends React.Component {
 }
 
 ReactCircleColorPicker.propTypes = {
-    colors: PropTypes.array,
+    colors: PropTypes.shape({
+        hex: PropTypes.string,
+        selected: PropTypes.bool
+    }),
     circleSize: PropTypes.number,
     circleSpacing: PropTypes.number,
     onChange: PropTypes.func
