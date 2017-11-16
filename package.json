@@ -1,8 +1,8 @@
 {
   "name": "react-circle-color-picker",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Circle color picker component for reactjs",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
