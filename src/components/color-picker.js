@@ -49,10 +49,10 @@ class ReactCircleColorPicker extends React.Component {
 }
 
 ReactCircleColorPicker.propTypes = {
-    colors: PropTypes.shape({
+    colors: PropTypes.arrayOf(PropTypes.shape({
         hex: PropTypes.string,
         selected: PropTypes.bool
-    }),
+    })),
     circleSize: PropTypes.number,
     circleSpacing: PropTypes.number,
     onChange: PropTypes.func

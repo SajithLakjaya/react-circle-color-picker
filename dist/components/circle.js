@@ -50,6 +50,21 @@
     };
   }
 
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+
+    return obj;
+  }
+
   var Circle = function Circle(_ref) {
     var circleSize = _ref.circleSize,
         onChange = _ref.onChange,
@@ -58,7 +73,7 @@
         selected = _ref.selected;
 
 
-    var styles = {
+    var styles = _defineProperty({
       width: circleSize,
       height: circleSize,
       backgroundColor: color,
@@ -68,7 +83,7 @@
       boxShadow: color + ' 0px 0px 0px 14px inset',
       transform: 'scale(1.0)',
       transition: 'transform 100ms ease'
-    };
+    }, 'boxShadow', '0px 0px 2px #888888');
 
     var checkIconStyle = {
       display: 'block',

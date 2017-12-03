@@ -15,7 +15,8 @@ const Circle = ({ circleSize, onChange, circleSpacing, color, selected }) => {
     margin: `${circleSpacing}px`,
     boxShadow: `${color} 0px 0px 0px 14px inset`,
     transform: 'scale(1.0)',
-    transition: 'transform 100ms ease'
+    transition: 'transform 100ms ease',
+    boxShadow: '0px 0px 2px #888888',
   };
 
   const checkIconStyle = {

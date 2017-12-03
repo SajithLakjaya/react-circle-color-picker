@@ -11,6 +11,7 @@ import ReactCircleColorPicker from '../src';
 
 storiesOf('Circle Color Picker', module)
   .add('Component', () => <ReactCircleColorPicker
-    colors={[{ hex: material.red[500], selected: true }, { hex: material.blue[500], selected: false }, { hex: material.green[500], selected: false }]}
+    colors={[{ hex: material.red[500], selected: true }, { hex: material.blue[500], selected: false }, { hex: material.green[500], selected: false },
+    { hex: material.white, selected: false }]}
     onChange={action('onChange')}
   />);

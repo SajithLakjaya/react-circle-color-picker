@@ -141,10 +141,10 @@
     }(_react2.default.Component);
 
     ReactCircleColorPicker.propTypes = {
-        colors: _propTypes2.default.shape({
+        colors: _propTypes2.default.arrayOf(_propTypes2.default.shape({
             hex: _propTypes2.default.string,
             selected: _propTypes2.default.bool
-        }),
+        })),
         circleSize: _propTypes2.default.number,
         circleSpacing: _propTypes2.default.number,
         onChange: _propTypes2.default.func
